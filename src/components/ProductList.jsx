@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const ProductList = ({ products, addToCart, removeFromCart, isInCart }) => {
+  // Function to render star ratings
   const renderStars = (rating) => {
     return (
       <div className="d-flex justify-content-center my-2">

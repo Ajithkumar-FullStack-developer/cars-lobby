@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
+// Navbar component that contains links and cart button
 const Navbar = ({ cartCount }) => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -66,6 +67,7 @@ const Navbar = ({ cartCount }) => {
             </li>
           </ul>
         </div>
+        {/* Cart button with item count */}
         <button className="btn btn-outline-dark" type="button">
           <i className="bi-cart-fill me-1"></i>
           Cart <span className="badge bg-dark text-white ms-1 rounded-pill">{cartCount}</span>

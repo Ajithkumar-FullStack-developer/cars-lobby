@@ -6,6 +6,7 @@ import ProductList from "./components/ProductList.jsx";
 
 const App = () => {
   const [cart, setCart] = useState([]);
+  //Data displayed here
   const products = [
     { id: 1, name: "Fancy Product", price: "40.00 - 80.00", sale: false, image: "/assets/images/product1.jpg" },
     { id: 2, name: "Special Item", price: 18.0, sale: true, originalPrice: 20.0, rating: 5, image: "/assets/images/product2.jpg" },
@@ -16,7 +17,7 @@ const App = () => {
     { id: 7, name: "Special Item", price: 30.0, sale: true, originalPrice: 45.0, rating: 5, image: "/assets/images/product7.jpg" },
     { id: 8, name: "Popular Item", price: 60.0, sale: false, rating: 5, image: "/assets/images/product8.jpg" },
   ];
-
+  //function to add the product to the cart
   const addToCart = (product) => {
     setCart((prevCart) => [...prevCart, product]);
   };
